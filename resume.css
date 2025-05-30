@@ -180,4 +180,48 @@ h1 {
       51vw 92vh 2px white, 59vw 78vh 1px white;
     animation: twinkle 6s infinite linear reverse;
   }
+
+
   
+.card {
+  position: relative;
+  box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width:15%;
+  transition:0.3s;
+  background-color: rgba(25, 25, 112, 0.7);
+  z-index: 900;
+  margin-top: 30px;
+  padding:10px;
+  border-radius: 20px;
+}
+
+.card p{
+  font-size: clamp(.25rem, 1.5vw, 3rem);
+  color: #a09e9e;
+  text-align: center;
+}
+
+.card img{
+  border-radius: 20px 20px 20px 20px;
+}
+
+.card h4{
+  font-size: clamp(.25rem, 2vw, 3rem);
+  color: #e0e0e0;
+  text-align: center;
+}
+.card:hover{
+  box-shadow:0 8px 16px 0 rgba(233, 229, 229, 0.548);
+}
+
+.container{
+  padding:2px 16px;
+  text-align: center;
+}
+
+.card-list{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;         
+  gap: 5rem;
+}
