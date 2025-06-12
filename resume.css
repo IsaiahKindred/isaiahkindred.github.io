@@ -196,7 +196,7 @@ h1 {
 }
 
 .card p{
-  font-size: clamp(.25rem, 1.5vw, 3rem);
+  font-size: clamp(.25rem, 1vw, 3rem);
   color: #a09e9e;
   text-align: center;
 }
@@ -206,7 +206,7 @@ h1 {
 }
 
 .card h4{
-  font-size: clamp(.25rem, 2vw, 3rem);
+  font-size: clamp(.25rem, 1.5vw, 3rem);
   color: #e0e0e0;
   text-align: center;
 }
