@@ -21,51 +21,100 @@
         <li class="navbar_elements" style="float: right"><a href="links.html"><strong>Links</strong></a></li>
     </ul>
     <h1 style="text-align: center; margin-top: 200px; font-size: clamp(.25rem, 15vw, 3rem); text-shadow: 1px 1px 2px rgb(168, 168, 168); color:aliceblue;">Projects</h1>
-    <div class="card-list" style = "margin-top: 2rem;">
-        <div class="card">
-            <img src="img/mefrfr.jpg" alt="Project1" style="width:100%;">
-            <div class="container">
-                <h4>Resume Website</h4>
-                <p>Website used to show my skills as well as show off my projects</p>
+    <div>
+        <div id="windowbackground" class="windowbackground" style="display:none;">
+            <div class="window">
+                <button class="exit" onclick="openwindow(0)">X</button>
+                <div id="container"></div>
             </div>
         </div>
-        <div class="card">
-            <img src="img/mefrfr.jpg" alt="Project1" style="width:100%;">
-            <div class="container">
-                <h4>Ashes and Instinct</h4>
-                <p>FPS game with roguelike mechanics</p>
-            </div>
+        <div class="card-list" style = "margin-top: 2rem;">
+            <button class="card" onclick="openwindow(1)">
+                <img src="img/resumesite.png" alt="Project1" style="width:100%;">
+                <div class="container">
+                    <h4>Resume Website</h4>
+                    <p>Website used to show my skills as well as show off my projects</p>
+                </div>
+            </button>
+            <button class="card" onclick="openwindow(2)">
+                <img src="img/ashandinstinct.png" alt="Project1" style="width:100%;">
+                <div class="container">
+                    <h4>Ashes and Instinct</h4>
+                    <p>FPS game with roguelike mechanics</p>
+                </div>
+            </button>
+            <button class="card" onclick="openwindow(3)">
+                <img src="img/contactmanager.png" alt="Project1" style="width:100%;">
+                <div class="container">
+                    <h4>Contact Manager</h4>
+                    <p>LAMP stack website used to manage contacts</p>
+                </div>
+            </button>
         </div>
-        <div class="card">
-            <img src="img/mefrfr.jpg" alt="Project1" style="width:100%;">
-            <div class="container">
-                <h4>Contact Manager</h4>
-                <p>LAMP stack website used to manage contacts</p>
-            </div>
-        </div>
-    </div>
-    <div class="card-list" style = "margin-top: 2rem; margin-bottom: 50px;">
-        <div class="card">
-            <img src="img/mefrfr.jpg" alt="Project1" style="width:100%;">
-            <div class="container">
-                <h4>CodeCrunch</h4>
-                <p>Warioware-like game used to teach basic CS concepts</p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="img/mefrfr.jpg" alt="Project1" style="width:100%;">
-            <div class="container">
-                <h4>Computer Graphics</h4>
-                <p>Various projects based around the concepts of ModernGL</p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="img/mefrfr.jpg" alt="Project1" style="width:100%;">
-            <div class="container">
-                <h4>N.O.V.A</h4>
-                <p>AI focusing app using opencv and face tracking</p>
-            </div>
+        <div class="card-list" style = "margin-top: 2rem; margin-bottom: 50px;">
+            <button class="card" onclick="openwindow(4)">
+                <img src="img/mefrfr.jpg" alt="Project1" style="width:100%;">
+                <div class="container">
+                    <h4>CodeCrunch</h4>
+                    <p>Warioware-like game used to teach basic CS concepts</p>
+                </div>
+            </button>
+            <button class="card" onclick="openwindow(5)">
+                <img src="img/computergraphics.png" alt="Project1" style="width:100%;">
+                <div class="container">
+                    <h4>Computer Graphics</h4>
+                    <p>Various projects based around the concepts of ModernGL</p>
+                </div>
+            </button>
+            <button class="card" onclick="openwindow(6)">
+                <img src="img/novaai.png" alt="Project1" style="width:100%;">
+                <div class="container">
+                    <h4>N.O.V.A</h4>
+                    <p>AI focusing app using opencv and face tracking</p>
+                </div>
+            </button>
         </div>
     </div>
 </body>
+<script>
+    function openwindow(num)
+    {
+        var myDiv = document.getElementById("windowbackground");
+        var container = document.getElementById('container');
+        if (num === 0)
+        {
+            myDiv.style.display = "none";
+        }
+        else if (num === 1)
+        {
+            container.innerHTML = '<h4>Portfolio Site</h4><p>you are kinda staring at it rn ngl</p>';
+            myDiv.style.display = "block";
+        }
+        else if (num === 2)
+        {
+            container.innerHTML = '<h4>Ashes and Instinct</h4><p>Work in Progress</p>';
+            myDiv.style.display = "block";
+        }
+        else if (num === 3)
+        {
+            container.innerHTML = '<h4>LAMP Stack Contact Manager</h4><video width="70%" height="30%" controls style="display: block; margin-left: auto; margin-right:auto;"><source src="videos/contactmanager.mp4" type="video/mp4"></video><p>Made using the LAMP framework with PHP and Javascript. Managed contacts and allowed for some simplistic contact editing, adding, deleting, as well as different accounts per person. My first experience with a framework that is built on in later projects.</p>';
+            myDiv.style.display = "block";
+        }
+        else if (num === 4)
+        {
+            container.innerHTML = '<h4>CodeCrunch</h4><p>Work in Progress</p>';
+            myDiv.style.display = "block";
+        }
+        else if (num === 5)
+        {
+            container.innerHTML = '<h4>Computer Graphics</h4><div style="display: flex; flex-direction:row; gap:20px; margin-left:5%; margin-right: 5%;"><video width="50%" height="50%" controls style="display: block;"><source src="videos/cgpt1.mp4" type="video/mp4"></video><video width="50%" height="50%" controls style="display: block; "><source src="videos/cgpt2.mp4" type="video/mp4"></video></div><p>Object loader and texture shader done using OpenGL and python plug ins such as pygame. Learning basic computer graphic concepts such as coding the objects to be reflective, have textures as well as manipulating a camera object for the shapes. Uses matrix operations as well as C and python concepts.</p><h5>Technologies Used</h5><ul><li>OpenGL</li><li>PyGame</li><li>Python, C</li></ul>';
+            myDiv.style.display = "block";
+        }
+        else if (num === 6)
+        {
+            container.innerHTML = '<h4>N.O.V.A AI</h4><img src="img/bestdesign.jpg" alt="BestDesign" style="width:70%;  max-width: 500px; max-height:500px; margin-left:auto; margin-right:auto; display: block;"><p>This project was created for the USF hackathon 2025! We wanted to make a focusing app that was dedicated to being a bit discrete and also allowing the users to keep track of how often they are paying attention to the screen versus not paying attention. Using the React framework along with some python plugins such as matplot, we were able to get set up with opencv in order to get it all put together and successfully wworking. This project won "Best Design".</p><a href="https://devpost.com/software/n-o-v-a-ai" target="_blank">Devpost Submission</a>';
+            myDiv.style.display = "block";
+        }
+    };
+</script>
 </html>

@@ -181,8 +181,6 @@ h1 {
     animation: twinkle 6s infinite linear reverse;
   }
 
-
-  
 .card {
   position: relative;
   box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -193,6 +191,12 @@ h1 {
   margin-top: 30px;
   padding:10px;
   border-radius: 20px;
+}
+
+button:hover {
+  cursor: pointer;
+  transform: scale(1.25);
+  z-index: 901;
 }
 
 .card p{
@@ -224,4 +228,73 @@ h1 {
   justify-content: center;
   flex-wrap: wrap;         
   gap: 5rem;
+}
+
+.window{
+  position: absolute;  
+  width: 70%;
+  height: 60%;
+  top: 350px;
+  left: 15%;
+  background: linear-gradient(rgba(19, 19, 83, 0.9), rgba(46, 46, 212, 0.9));
+  border-radius: 20px;
+  box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  z-index: 903;
+  animation: fadeIn .5s ease forwards;
+}
+.windowbackground{
+  position: absolute;
+  top: 0;
+  width:100%;
+  height:1120px;
+  background: #090a0fad;
+  z-index: 902;
+}
+
+.window .exit{
+  width:10%;
+  height:10%;
+  color: aliceblue;
+  background:none;
+  border:none;
+  margin-bottom: 10px;
+}
+
+.window h4{
+  text-align: center;
+  position: relative;
+  margin-left: auto;
+  margin-bottom: 10px;
+  font-size: x-large;
+  color: aliceblue;
+}
+.window h5{
+  text-align: left;
+  position: relative;
+  margin-left: 5%;
+  margin-bottom: 10px;
+  font-size: large;
+  color: aliceblue;
+}
+.window p{
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: aliceblue;
+  line-height: 1.5;
+}
+.window li{
+  margin-left: 7%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: aliceblue;
+  line-height: 1;
+}
+.window a{
+  margin-left: 5%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: aliceblue;
+  line-height: 1;
 }
