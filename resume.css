@@ -7,7 +7,7 @@
     top: 0;
     width: 100%;
     overflow: hidden;
-    z-index: 1000;
+    z-index: 903;
 }
 
 .navbar_elements {
@@ -234,26 +234,31 @@ button:hover {
   gap: 5rem;
 }
 
-.window{
-  position: absolute;  
+.window {
+  position: fixed;
+  top: 25%;
+  left: 12.5%;
+  transform: translate(-50%, -50%); /* <— This centers it properly */
   width: 70%;
   height: 60%;
-  top: 350px;
-  left: 15%;
   background: linear-gradient(rgba(19, 19, 83, 0.9), rgba(46, 46, 212, 0.9));
   border-radius: 20px;
-  box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  z-index: 903;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  z-index: 905;
   animation: fadeIn .5s ease forwards;
 }
-.windowbackground{
-  position: absolute;
+
+
+.windowbackground {
+  position: fixed;
   top: 0;
-  width:100%;
-  height:1120px;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background: #090a0fad;
-  z-index: 902;
+  z-index: 904;
 }
+
 
 .window .exit{
   width:10%;
