@@ -286,6 +286,7 @@ button:hover {
 }
 .window li{
   margin-left: 7%;
+  font-size: small;
   margin-top: 1rem;
   margin-bottom: 1rem;
   color: aliceblue;

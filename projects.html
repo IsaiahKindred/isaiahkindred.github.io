@@ -30,21 +30,21 @@
         </div>
         <div class="card-list" style = "margin-top: 2rem;">
             <button class="card" onclick="openwindow(1)">
-                <img src="img/resumesite.png" alt="Project1" style="width:100%;">
+                <img src="img/resumesite.png" alt="Project1" style="width:100%; max-width: 250px; max-height: 200px;">
                 <div class="container">
                     <h4>Resume Website</h4>
                     <p>Website used to show my skills as well as show off my projects</p>
                 </div>
             </button>
             <button class="card" onclick="openwindow(2)">
-                <img src="img/ashandinstinct.png" alt="Project1" style="width:100%;">
+                <img src="img/ashandinstinct.png" alt="Project1" style="width:100%; max-width: 250px; max-height: 200px;">
                 <div class="container">
                     <h4>Ashes and Instinct</h4>
                     <p>FPS game with roguelike mechanics</p>
                 </div>
             </button>
             <button class="card" onclick="openwindow(3)">
-                <img src="img/contactmanager.png" alt="Project1" style="width:100%;">
+                <img src="img/contactmanager.png" alt="Project1" style="width:100%; max-width: 250px; max-height: 200px;">
                 <div class="container">
                     <h4>Contact Manager</h4>
                     <p>LAMP stack website used to manage contacts</p>
@@ -53,21 +53,21 @@
         </div>
         <div class="card-list" style = "margin-top: 2rem; margin-bottom: 50px;">
             <button class="card" onclick="openwindow(4)">
-                <img src="img/mefrfr.jpg" alt="Project1" style="width:100%;">
+                <img src="img/CodeCrunchMiniGame.png" alt="Project1" style="width:100%; max-width: 250px; max-height: 200px;">
                 <div class="container">
                     <h4>CodeCrunch</h4>
                     <p>Warioware-like game used to teach basic CS concepts</p>
                 </div>
             </button>
             <button class="card" onclick="openwindow(5)">
-                <img src="img/computergraphics.png" alt="Project1" style="width:100%;">
+                <img src="img/computergraphics.png" alt="Project1" style="width:100%; max-width: 250px; max-height: 200px;">
                 <div class="container">
                     <h4>Computer Graphics</h4>
                     <p>Various projects based around the concepts of ModernGL</p>
                 </div>
             </button>
             <button class="card" onclick="openwindow(6)">
-                <img src="img/novaai.png" alt="Project1" style="width:100%;">
+                <img src="img/novaai.png" alt="Project1" style="width:100%; max-width: 250px; max-height: 200px;">
                 <div class="container">
                     <h4>N.O.V.A</h4>
                     <p>AI focusing app using opencv and face tracking</p>
@@ -87,12 +87,12 @@
         }
         else if (num === 1)
         {
-            container.innerHTML = '<h4>Portfolio Site</h4><p>you are kinda staring at it rn ngl</p>';
+            container.innerHTML = '<h4>Portfolio Site</h4><p>This current website that shows off my recent projects as well as will be built on as I do more projects. The plan is to keep this git repository for it for the time being but also transfer it over to a react framework. Right now uses base CSS HTML and Javascript, I want to transfer to Tailwind or Bootstrap as well at some point.</p><a href="https://github.com/IsaiahKindred/isaiahkindred.github.io.git" target="_blank">Github Repository</a>';
             myDiv.style.display = "block";
         }
         else if (num === 2)
         {
-            container.innerHTML = '<h4>Ashes and Instinct</h4><p>Work in Progress</p>';
+            container.innerHTML = '<h4>Ashes and Instinct</h4><p>Game made using Unity. Is an fps roguelike that is in the style of ultrakill and doom. Was a very fun and interesting game making project along with a team of other students that helped make it a reality. I was the movement and player design leader of the group while we also had a UI designer, an enemy and enemy AI designer, a level designer and an artist. Uses unity plugins and helped strengthen my C# experience and also build on my unity experience.</p>';
             myDiv.style.display = "block";
         }
         else if (num === 3)
@@ -102,12 +102,12 @@
         }
         else if (num === 4)
         {
-            container.innerHTML = '<h4>CodeCrunch</h4><p>Work in Progress</p>';
+            container.innerHTML = '<h4>CodeCrunch</h4><img src="img/CodeCrunchUI.png" alt="CodeCrunch" style="width:70%;  max-width: 700px; max-height:700px; margin-left:auto; margin-right:auto; display: block;"><p>Worked collaboratively in a group to create an in browser game using the react framework that is meant to teach newer CS degree pursuing students, basic concepts in CS that will help prepare them to take the UCF Foundation Exam. I personally coded and did the frontend design for the game portion of the project with the other supporting frontend member doing login pages and home pages. We also have backend support with API calls helping to keep data secure and allow for people to have their own stats and accounts.</p>';
             myDiv.style.display = "block";
         }
         else if (num === 5)
         {
-            container.innerHTML = '<h4>Computer Graphics</h4><div style="display: flex; flex-direction:row; gap:20px; margin-left:5%; margin-right: 5%;"><video width="50%" height="50%" controls style="display: block;"><source src="videos/cgpt1.mp4" type="video/mp4"></video><video width="50%" height="50%" controls style="display: block; "><source src="videos/cgpt2.mp4" type="video/mp4"></video></div><p>Object loader and texture shader done using OpenGL and python plug ins such as pygame. Learning basic computer graphic concepts such as coding the objects to be reflective, have textures as well as manipulating a camera object for the shapes. Uses matrix operations as well as C and python concepts.</p><h5>Technologies Used</h5><ul><li>OpenGL</li><li>PyGame</li><li>Python, C</li></ul>';
+            container.innerHTML = '<h4>Computer Graphics</h4><div style="display: flex; flex-direction:row; gap:20px; margin-left:5%; margin-right: 5%;"><video width="50%" height="50%" controls style="display: block;"><source src="videos/cgpt1.mp4" type="video/mp4"></video><video width="50%" height="50%" controls style="display: block; "><source src="videos/cgpt2.mp4" type="video/mp4"></video></div><p>Object loader and texture shader done using OpenGL and python plug ins such as pygame. Learning basic computer graphic concepts such as coding the objects to be reflective, have textures as well as manipulating a camera object for the shapes. Uses matrix operations as well as C and python concepts.</p><h5>Technologies Used</h5><ul><li>OpenGL</li><li>PyGame</li><li>Python, C</li></ul><a href="https://github.com/IsaiahKindred/ComputerGraphics" target="_blank">Github Repository</a>';
             myDiv.style.display = "block";
         }
         else if (num === 6)
