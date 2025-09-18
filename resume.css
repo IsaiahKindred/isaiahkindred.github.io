@@ -49,6 +49,10 @@ h1 {
     font-family: 'Roboto', sans-serif;
 }
 
+@media (max-width: 640px) {
+  .hero { background-attachment: scroll; } /* prevent extra scroll on iOS */
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;
